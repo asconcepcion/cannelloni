@@ -70,3 +70,6 @@ target_compile_features(addsources PRIVATE cxx_auto_type)
 
 install(TARGETS cannelloni DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(TARGETS cannelloni-common DESTINATION ${CMAKE_INSTALL_LIBDIR})
+
+option(ENABLE_UNIT_TESTS "Enable unit tests" ON)
+add_subdirectory(unit-tests)
