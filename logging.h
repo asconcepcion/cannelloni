@@ -68,4 +68,4 @@ inline void printCANInfo(const canfd_frame *frame) {
       std::cout << std::setbase(16) << " " << int(frame->data[i]);
   }
   std::cout << std::endl;
-};
+}

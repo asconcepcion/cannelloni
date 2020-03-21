@@ -106,4 +106,4 @@ std::map<K,V>& CSVMapParser<K,V>::read() {
   return m_map;
 }
 
-};
+}

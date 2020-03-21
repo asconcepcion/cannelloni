@@ -47,8 +47,14 @@ add_library(addsources STATIC
             udpthread.cpp
             canthread.cpp)
 
+target_compile_options(addsources PRIVATE -Werror -Wall -Wextra -pedantic)
+
+target_compile_options(cannelloni PRIVATE -Werror -Wall -Wextra -pedantic)
+
 add_library(cannelloni-common SHARED
             parser.cpp)
+
+target_compile_options(cannelloni-common PRIVATE -Werror -Wall -Wextra -pedantic)
 
 set_target_properties ( cannelloni-common
   PROPERTIES
